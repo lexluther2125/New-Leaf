@@ -1,0 +1,294 @@
+body {
+    background-color: #5c5c5c;
+}
+
+#header {
+    background-image: url("../img/shapes.png");
+    padding: 100px;
+}
+
+#leaf {
+	width: 90px;
+	height: 90px;
+}
+
+.title {
+    color: #00b154;
+    font-family: 'Poiret One', cursive;
+    font-size: 62px;
+}
+
+.subtitle {
+    color: white;
+    padding-top: 30px;
+    font-family: 'Cardo', serif;
+    font-size: 35px;
+}
+
+.container {
+    background-color: #292725;
+    padding: 55px;
+}
+
+#goalForm {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: 'Cardo', serif;
+    font-size: 18px;
+}
+
+#describe {
+	font-size: 18px;
+}
+
+#formBox {
+    background-color: #5c5c5c;
+}
+
+table {
+  font-family: sans-serif;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  table-layout: fixed;
+  margin-bottom: 50px;
+}
+table thead tr th {
+  background: #5c5c5c;
+  color: #c2c2c2;
+  padding: 0.5em;
+  overflow: hidden;
+}
+table thead tr th:first-child {
+  border-radius: 3px 0 0 0;
+}
+table thead tr th:last-child {
+  border-radius: 0 3px 0 0;
+}
+table thead tr th .day .long{
+  display: block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  /*margin: 0 auto;*/
+  padding: 5px;
+  line-height: 1.8;
+}
+
+/*.long{
+  padding-left: 50px;
+}*/
+
+table thead tr th .day.active {
+  background: #c2c2c2;
+  color: #5c5c5c;
+}
+table thead tr th .short {
+  display: none;
+}
+table thead tr th i {
+  vertical-align: middle;
+  font-size: 2em;
+}
+table tbody tr {
+  background: #c2c2c2;
+}
+table tbody tr:nth-child(odd) {
+  background: #bababa;
+}
+table tbody tr:nth-child(8n + 0) td {
+  border-bottom: 1px solid #5c5c5c;
+}
+table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  border-left: 1px solid #5c5c5c;
+  position: relative;
+  height: 32px;
+  cursor: pointer;
+}
+table tbody tr td:last-child {
+  border-right: 1px solid #5c5c5c;
+}
+table tbody tr td.hour {
+  font-size: 2em;
+  padding: 0;
+  color: #5c5c5c;
+  background: #fff;
+  border-bottom: 1px solid #5c5c5c;
+  border-collapse: separate;
+  min-width: 100px;
+  cursor: default;
+}
+table tbody tr td.hour span {
+  display: block;
+}
+@media (max-width: 60em) {
+  table thead tr th .long {
+    display: none;
+    text-align: center;
+  }
+  table thead tr th .short {
+    display: block;
+  }
+  table tbody tr td.hour span {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+  }
+}
+@media (max-width: 27em) {
+  table thead tr th {
+    font-size: 65%;
+  }
+  table thead tr th .day {
+    display: block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 5px;
+    padding: 5px;
+  }
+  table thead tr th .day.active {
+    background: #c2c2c2;
+    color: #5c5c5c;
+  }
+  table tbody tr td.hour {
+    font-size: 1.7em;
+  }
+  table tbody tr td.hour span {
+    transform: translateY(16px) rotate(270deg);
+    -webkit-transform: translateY(16px) rotate(270deg);
+    -moz-transform: translateY(16px) rotate(270deg);
+  }
+}
+
+.calendar {
+	background-color: #292725;
+  border-right: solid .5px white;
+
+}
+
+.userInput {
+	color: #3b3936;
+	font-size: 16px;
+}
+
+#footer {
+	background-image: url("../img/shapes.png");
+	padding: 100px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #00b154; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*
+.long {
+  margin-left: 60px;
+  margin-bottom: 10px;
+}*/
+
+#forth {
+  background-color: #292725;
+  font-family: 'Poiret One', cursive;
+}
+
+#table {
+  padding: 50px;
+}
+
+#indent {
+  margin-left: 250px;
+}
+
+/*h1.rw-sentence {
+  text-indent: 170px;
+}*/
+
+.rw-sentence{
+  margin: 0;
+  text-align: left;
+  color: white;
+}
+
+
+.rw-sentence span{
+  color: white;
+  white-space: nowrap;
+  font-size: 350%;
+  font-weight: normal;
+}
+
+.rw-words{
+  display: inline;
+  text-indent: 16px;
+}
+
+.rw-words span{
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  color: #00b154;
+}
+
+.rw-words-1 span{
+  animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span{
+  animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+  animation-delay: 3s; 
+  color: #00b154;
+}
+.rw-words span:nth-child(3) { 
+  animation-delay: 6s; 
+  color: #00b154; 
+}
+.rw-words span:nth-child(4) { 
+  animation-delay: 9s; 
+  color: #00b154;
+}
+.rw-words span:nth-child(5) { 
+  animation-delay: 12s; 
+  color: #00b154;
+}
+.rw-words span:nth-child(6) {  
+  animation-delay: 15s; 
+  color: #00b154;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 80px; }
+    19% { opacity: 1; height: 80px; }
+  25% { opacity: 0; height: 80px; }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+  20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
